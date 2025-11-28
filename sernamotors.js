@@ -1,0 +1,1 @@
+// Interactividad se agregará en commits posteriores
