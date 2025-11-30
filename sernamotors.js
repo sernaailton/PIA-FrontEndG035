@@ -62,3 +62,37 @@ window.addEventListener("resize", () => {
     menuToggle.setAttribute("aria-expanded", "false");
   }
 });
+
+// Modal de autos
+const modal = document.getElementById("modalAuto");
+const cerrarModal = document.getElementById("cerrarModal");
+const modalImg = document.getElementById("modalImg");
+const modalTitulo = document.getElementById("modalTitulo");
+const modalModelo = document.getElementById("modalModelo");
+const modalPrecio = document.getElementById("modalPrecio");
+
+// Abrir modal al hacer clic en "Más información"
+document.querySelectorAll(".auto-card").forEach(card => {
+  const btn = card.querySelector(".btn-info");
+
+  btn.addEventListener("click", () => {
+    modalImg.src = card.querySelector("img").src;
+    modalTitulo.textContent = card.querySelector("h3").textContent;
+    modalModelo.textContent = "Modelo: " + card.querySelector(".modelo").textContent;
+    modalPrecio.textContent = "Precio: " + card.querySelector(".precio").textContent;
+
+    modal.classList.add("show");
+  });
+});
+
+// Cerrar modal con la X
+cerrarModal.addEventListener("click", () => {
+  modal.classList.remove("show");
+});
+
+// Cerrar modal haciendo clic fuera del contenido
+modal.addEventListener("click", (e) => {
+  if (e.target === modal) {
+    modal.classList.remove("show");
+  }
+});

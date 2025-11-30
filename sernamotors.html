@@ -11,7 +11,9 @@
   <!-- HEADER -->
   <header>
     <nav class="navbar" role="navigation" aria-label="Menú principal">
-        <div class="logo">SERNAMOTORS</div>
+        <div class="logo">
+            <img src="images/logo.png" alt="Sernamotors Logo">
+        </div>          
       
         <div class="menu-toggle" id="menuToggle" aria-label="Abrir menú">&#9776;</div>
       
@@ -159,19 +161,61 @@
     <h2>¿Por qué elegir SERNAMOTORS?</h2>
 
     <ul class="lista-beneficios">
-      <li>✔ Autos certificados con historial completo</li>
-      <li>✔ Modelos premium y alto rendimiento</li>
-      <li>✔ Atención personalizada</li>
-      <li>✔ Financiamiento disponible</li>
+      <li> Autos certificados con historial completo</li>
+      <li> Modelos premium y alto rendimiento</li>
+      <li> Atención personalizada</li>
+      <li> Financiamiento disponible</li>
     </ul>
   </section>
 
   <!-- CONTACTO -->
-  <section id="contacto" class="contacto">
+  <section id="contacto" class="contact-section">
     <h2>Contacto</h2>
-    <p>Para más información sobre nuestros modelos, contáctanos por WhatsApp o redes sociales.</p>
-    <a class="btn-principal" href="#">Enviar mensaje</a>
+  
+    <div class="contact-buttons">
+  
+      <!-- WhatsApp -->
+      <a 
+        href="https://wa.me/528131295749?text=Hola,%20estoy%20interesado%20en%20adquirir%20un%20automovil" 
+        target="_blank" 
+        class="contact-btn"
+      >
+        <img src="images/whatsapp.png" alt="WhatsApp">
+        <span>WhatsApp</span>
+      </a>
+  
+      <!-- Instagram -->
+      <a 
+        href="https://www.instagram.com/sernaailton/" 
+        target="_blank" 
+        class="contact-btn"
+      >
+        <img src="images/instagram.png" alt="Instagram">
+        <span>Instagram</span>
+      </a>
+  
+      <!-- Facebook/Messenger -->
+      <a 
+        href="https://m.me/ailton.serna.2025" 
+        target="_blank" 
+        class="contact-btn"
+      >
+        <img src="images/messenger.png" alt="Facebook">
+        <span>Facebook</span>
+      </a>
+  
+      <!-- Llamada -->
+      <a 
+        href="tel:8131295749" 
+        class="contact-btn"
+      >
+        <img src="images/telefono.png" alt="Teléfono">
+        <span>Llamar</span>
+      </a>
+  
+    </div>
   </section>
+  
 
   <!-- FOOTER -->
   <footer>
@@ -179,5 +223,17 @@
   </footer>
 
   <script src="sernamotors.js" defer></script>
+
+  <!-- MODAL DETALLES AUTO -->
+  <div id="modalAuto" class="modal">
+    <div class="modal-content">
+      <span id="cerrarModal" class="cerrar">&times;</span>
+  
+      <img id="modalImg" src="" alt="Imagen del auto">
+      <h3 id="modalTitulo"></h3>
+      <p id="modalModelo"></p>
+      <p id="modalPrecio"></p>
+    </div>
+  </div>  
 </body>
 </html>
