@@ -202,3 +202,19 @@
     }
   }
   
+  /* Hover y foco accesible */
+.nav-links a:hover,
+.nav-links a:focus {
+  color: #ccc;
+}
+
+/* Menú desplegado en móvil */
+.nav-links.show {
+  display: flex;
+}
+
+/* Cursor para el ícono */
+.menu-toggle {
+  cursor: pointer;
+  user-select: none;
+}
