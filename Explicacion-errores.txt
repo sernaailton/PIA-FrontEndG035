@@ -1,0 +1,19 @@
+Descripción de errores finales (no se corrigieron o no hay necesidad):
+Imágenes más grandes que la visualización:
+Las imágenes utilizadas en el sitio tienen una resolución mayor al tamaño con el que se muestran en pantalla. Esto no representa un problema, ya que mediante las reglas del archivo CSS se ajustan correctamente para mantener un diseño uniforme y responsivo.
+
+robots.txt:
+Lighthouse muestra una advertencia al no poder descargar el archivo robots.txt. Esto es lógico, ya que la prueba se está ejecutando de manera local y no desde un sitio publicado en un servidor. Al no existir un dominio real, no se genera dicho archivo. No es un error funcional y no requiere corrección.
+
+Descripción de errores que se corrigieron:
+Meta description:
+Se agregó una metadescription al archivo para describir el contenido del sitio y cumplir con los requisitos de semántica y accesibilidad.
+
+Atributos ARIA:
+Se corrigió el uso del menú hamburguesa implementando atributos aria adecuados (aria-label, aria-expanded), cumpliendo con las recomendaciones de accesibilidad Axecore.
+
+Atributos ALT:
+Se modificaron los atributos alt redundantes en las imágenes, ya que cada imagen cuenta con un título mediante h3, evitando duplicidad semántica.
+
+Width y Height:
+Se agregaron atributos width y height a todas las imágenes para reservar espacio durante la carga, evitando layout shifts, mientras que el tamaño visual final continúa siendo controlado desde el CSS.

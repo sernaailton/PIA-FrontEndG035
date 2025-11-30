@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SERNAMOTORS</title>
+
+  <!-- META DESCRIPTION -->
+  <meta name="description" content="SERNAMOTORS — Venta de autos de lujo: Porsche, Ferrari, Mercedes-Benz, BMW y Audi. Modelos exclusivos certificados, atención personalizada y catálogo premium.">
+
   <link rel="stylesheet" href="sernamotors.css">
 </head>
 
@@ -11,11 +15,15 @@
   <!-- HEADER -->
   <header>
     <nav class="navbar" role="navigation" aria-label="Menú principal">
+
         <div class="logo">
-            <img src="images/logo.png" alt="Sernamotors Logo">
-        </div>          
-      
-        <div class="menu-toggle" id="menuToggle" aria-label="Abrir menú">&#9776;</div>
+            <img src="images/logo.png" width="210" height="87" alt="logo">
+        </div>   
+
+        <!-- ARIA FIX -->
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
+          &#9776;
+        </button>
       
         <ul class="nav-links" id="navLinks">
           <li><a href="#hero">Inicio</a></li>
@@ -54,7 +62,7 @@
 
         <article class="auto-card porsche">
             <div class="auto-img">
-                <img loading="lazy" src="images/porsche 911 turbo s.png" alt="Porsche 911 Turbo S 2023">
+                <img loading="lazy" src="images/porsche 911 turbo s.png" width="595" height="350" alt="auto">
             </div>
           <h3>Porsche 911 Turbo S</h3>
           <p class="modelo">2023</p>
@@ -64,7 +72,7 @@
       
         <article class="auto-card porsche">
             <div class="auto-img">
-                <img loading="lazy" src="images/Porsche Taycan Turrbo S.png" alt="Porsche Taycan Turbo S 2023">
+                <img loading="lazy" src="images/Porsche Taycan Turrbo S.png" width="595" height="350" alt="auto">
             </div>
           <h3>Porsche Taycan Turbo S</h3>
           <p class="modelo">2023</p>
@@ -74,7 +82,7 @@
       
         <article class="auto-card ferrari">
             <div class="auto-img">
-                <img loading="lazy" src="images/Ferrari 488 GTB.png" alt="Ferrari 488 GTB 2022">
+                <img loading="lazy" src="images/Ferrari 488 GTB.png" width="595" height="350" alt="auto">
             </div>
           <h3>Ferrari 488 GTB</h3>
           <p class="modelo">2022</p>
@@ -84,7 +92,7 @@
       
         <article class="auto-card ferrari">
             <div class="auto-img">
-                <img loading="lazy" src="images/Ferrari F8 Tributo.png" alt="Ferrari F8 Tributo 2023">
+                <img loading="lazy" src="images/Ferrari F8 Tributo.png" width="595" height="350" alt="auto">
             </div>
           <h3>Ferrari F8 Tributo</h3>
           <p class="modelo">2023</p>
@@ -94,7 +102,7 @@
       
         <article class="auto-card mercedes">
             <div class="auto-img">
-                <img loading="lazy" src="images/Mercedes AMG GT.png" alt="Mercedes AMG GT 2022">
+                <img loading="lazy" src="images/Mercedes AMG GT.png" width="595" height="350" alt="auto">
             </div>
           <h3>Mercedes AMG GT</h3>
           <p class="modelo">2022</p>
@@ -104,7 +112,7 @@
       
         <article class="auto-card mercedes">
             <div class="auto-img">
-                <img loading="lazy" src="images/Mercedes Benz S-Class.png" alt="Mercedes-Benz S-Class 2023">
+                <img loading="lazy" src="images/Mercedes Benz S-Class.png" width="595" height="350" alt="auto">
             </div>
           <h3>Mercedes-Benz S-Class</h3>
           <p class="modelo">2023</p>
@@ -114,7 +122,7 @@
       
         <article class="auto-card bmw">
             <div class="auto-img">
-                <img loading="lazy" src="images/BMW Serie 8 Coupe.png" alt="BMW Serie 8 Coupé 2023">
+                <img loading="lazy" src="images/BMW Serie 8 Coupe.png" width="595" height="350" alt="auto">
             </div>
           <h3>BMW Serie 8 Coupé</h3>
           <p class="modelo">2023</p>
@@ -124,7 +132,7 @@
       
         <article class="auto-card bmw">
             <div class="auto-img">
-                <img loading="lazy" src="images/BMW M5 Competition.png" alt="BMW M5 Competition 2022">
+                <img loading="lazy" src="images/BMW M5 Competition.png" width="595" height="350" alt="auto">
             </div>
           <h3>BMW M5 Competition</h3>
           <p class="modelo">2022</p>
@@ -134,7 +142,7 @@
       
         <article class="auto-card audi">
             <div class="auto-img">
-                <img loading="lazy" src="images/Audi R8 V10.png" alt="Audi R8 V10 2023">
+                <img loading="lazy" src="images/Audi R8 V10.png" width="595" height="350" alt="auto">
             </div>
           <h3>Audi R8 V10</h3>
           <p class="modelo">2023</p>
@@ -144,7 +152,7 @@
       
         <article class="auto-card audi">
             <div class="auto-img">
-                <img loading="lazy" src="images/Audi S8.png" alt="Audi S8 2023">
+                <img loading="lazy" src="images/Audi S8.png" width="595" height="350" alt="auto">
             </div>
           <h3>Audi S8</h3>
           <p class="modelo">2023</p>
@@ -173,49 +181,44 @@
     <h2>Contacto</h2>
   
     <div class="contact-buttons">
-  
-      <!-- WhatsApp -->
+
       <a 
         href="https://wa.me/528131295749?text=Hola,%20estoy%20interesado%20en%20adquirir%20un%20automovil" 
         target="_blank" 
         class="contact-btn"
       >
-        <img src="images/whatsapp.png" alt="WhatsApp">
+        <img src="images/whatsapp.png" width="105" height="105" alt="contacto">
         <span>WhatsApp</span>
       </a>
   
-      <!-- Instagram -->
       <a 
         href="https://www.instagram.com/sernaailton/" 
         target="_blank" 
         class="contact-btn"
       >
-        <img src="images/instagram.png" alt="Instagram">
+        <img src="images/instagram.png" width="105" height="105" alt="contacto">
         <span>Instagram</span>
       </a>
   
-      <!-- Facebook/Messenger -->
       <a 
         href="https://m.me/ailton.serna.2025" 
         target="_blank" 
         class="contact-btn"
       >
-        <img src="images/messenger.png" alt="Facebook">
+        <img src="images/messenger.png" width="105" height="105" alt="contacto">
         <span>Facebook</span>
       </a>
   
-      <!-- Llamada -->
       <a 
         href="tel:8131295749" 
         class="contact-btn"
       >
-        <img src="images/telefono.png" alt="Teléfono">
+        <img src="images/telefono.png" width="105" height="105" alt="contacto">
         <span>Llamar</span>
       </a>
   
     </div>
   </section>
-  
 
   <!-- FOOTER -->
   <footer>
@@ -229,11 +232,12 @@
     <div class="modal-content">
       <span id="cerrarModal" class="cerrar">&times;</span>
   
-      <img id="modalImg" src="" alt="Imagen del auto">
+      <img id="modalImg" src="" width="800" height="600" alt="detalles auto">
       <h3 id="modalTitulo"></h3>
       <p id="modalModelo"></p>
       <p id="modalPrecio"></p>
     </div>
   </div>  
+
 </body>
 </html>
